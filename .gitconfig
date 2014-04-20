@@ -1,0 +1,15 @@
+[alias]
+  s = status
+  b = branch
+  co = checkout
+  a = add -A :/
+  hub = push origin master
+  heroku = push heroku master
+[core]
+	editor = subl
+	excludesfile = /Users/djhartman/.gitignore_global
+[color]
+	ui = true
+[user]
+	name = DJ Hartman
+	email = danieljayhartman@gmail.com
