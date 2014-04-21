@@ -67,4 +67,4 @@ fi
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # rbenv
-eval "$(rbenv init - --no-rehash)"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
