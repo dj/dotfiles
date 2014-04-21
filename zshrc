@@ -50,7 +50,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.rbenv/bin:$PATH
 export CDPATH=.:~:~/dev
 
 # Preferred editor for local and remote sessions
