@@ -13,7 +13,7 @@ alias linkdotfiles="sh ~/dotfiles/symlinkdotfiles.sh"
 # CASE_SENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -65,4 +65,6 @@ fi
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
-eval "$(rbenv init -)"
+
+# rbenv
+eval "$(rbenv init - --no-rehash)"
