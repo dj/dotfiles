@@ -65,3 +65,4 @@ fi
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+eval "$(rbenv init -)"
