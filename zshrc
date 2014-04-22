@@ -9,6 +9,9 @@ alias zshconf="subl ~/dotfiles/zshrc"
 alias dotfiles="subl ~/dotfiles"
 alias linkdotfiles="sh ~/dotfiles/symlinkdotfiles.sh"
 
+# Override zsh corrections
+alias test="nocorrect bundle exec rspec"
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
