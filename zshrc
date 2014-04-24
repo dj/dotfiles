@@ -8,9 +8,14 @@ ZSH_THEME="robbyrussell"
 alias zshconf="subl ~/dotfiles/zshrc"
 alias dotfiles="subl ~/dotfiles"
 alias linkdotfiles="sh ~/dotfiles/symlinkdotfiles.sh"
+alias sshconf="subl ~/.ssh/config"
 
-# Override zsh corrections
+# Rails
 alias test="nocorrect bundle exec rspec"
+alias rdr="nocorrect bundle exec rake db:rollback"
+alias rdm="nocorrect bundle exec rake db:migrate"
+alias rc="nocorrect bundle exec rails c"
+alias rs="nocorrect bundle exec rails s"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
