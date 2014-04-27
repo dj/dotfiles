@@ -61,12 +61,12 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.rbenv/bin:$PATH
 export CDPATH=.:~:~/dev
 
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='subl'
-fi
+# # Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='subl'
+# fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
