@@ -5,3 +5,6 @@ filetype plugin indent on
 syntax enable
 set background=light
 colorscheme solarized
+
+" Line nums
+set number
