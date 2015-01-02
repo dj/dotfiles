@@ -5,17 +5,26 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 ZSH_THEME="robbyrussell"
 
-alias zshconf="subl ~/dotfiles/zshrc"
 alias dotfiles="subl ~/dotfiles"
 alias linkdotfiles="sh ~/dotfiles/symlinkdotfiles.sh"
 alias sshconf="subl ~/.ssh/config"
+alias psd="nocorrect open /Applications/Adobe\ Photoshop\ CS6/Adobe\ Photoshop\ CS6.app"
+alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
+
+# Anaconda
+export PATH="/Users/djhartman/dev/anaconda/bin:$PATH"
 
 # Rails
-alias test="nocorrect bundle exec rspec"
+alias specs="nocorrect bundle exec rspec"
 alias rdr="nocorrect bundle exec rake db:rollback"
 alias rdm="nocorrect bundle exec rake db:migrate"
-alias rc="nocorrect bundle exec rails c"
-alias rs="nocorrect bundle exec rails s"
+alias rc="nocorrect bundle exec rails console"
+alias rs="nocorrect bundle exec rails server"
+alias cap="nocorrect bundle exec cap"
+
+# NPM
+export NVM_DIR="/Users/djhartman/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -52,7 +61,7 @@ DISABLE_AUTO_UPDATE="true"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git bundler heroku npm osx nyan rand-quote)
+plugins=(git bundler npm osx nyan rand-quote)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -61,12 +70,12 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.rbenv/bin:$PATH
 export CDPATH=.:~:~/dev
 
-# # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='subl'
-# fi
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='subl'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"

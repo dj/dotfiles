@@ -3,13 +3,19 @@
   b = branch
   co = checkout
   a = add -A :/
+  l = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'
   hub = push origin master
   heroku = push heroku master
 [core]
-	editor = subl
+	editor = subl -w
 	excludesfile = /Users/djhartman/.gitignore_global
 [color]
 	ui = true
 [user]
 	name = DJ Hartman
 	email = danieljayhartman@gmail.com
+[merge]
+	tool = diffmerge
+[mergetool "diffmerge"]
+	cmd = diffmerge --merge\n--result=$MERGED $LOCAL $BASE $REMOTE
+	trustExitCode = true
