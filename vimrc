@@ -2,6 +2,11 @@ set nocompatible
 syntax on
 filetype off
 
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
