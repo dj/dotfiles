@@ -67,7 +67,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$HOME/.rbenv/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.rbenv/bin:node_modules/.bin:$PATH
 export CDPATH=.:~:~/dev
 
 # Preferred editor for local and remote sessions
