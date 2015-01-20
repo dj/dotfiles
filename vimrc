@@ -17,6 +17,7 @@ Plugin 'guns/vim-clojure-static'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'tpope/vim-fireplace'
 Plugin 'digitaltoad/vim-jade.git'
+Plugin 'tpope/vim-commentary'
 
 call vundle#end()
 
